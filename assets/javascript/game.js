@@ -56,6 +56,7 @@ document.onkeypress = function(event) {
             if (userGuess == letterToGuess){
                 wins++;
                 document.querySelector('#wins').innerHTML = "Wins: " + wins;
+                alert("You should play the lottery!");
                 reset();
             }
         }else if(guessesRemaining == 0){
@@ -63,6 +64,7 @@ document.onkeypress = function(event) {
             losses++;
             document.querySelector('#losses').innerHTML = "Losses: " + losses;
             // Then we'll call the reset. 
+            alert("Better luck next time, loser!");
             reset();
         }
 };
